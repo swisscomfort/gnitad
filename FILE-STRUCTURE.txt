@@ -1,0 +1,88 @@
+fetisch-dating-platform/
+│
+├── 📄 README.md                          ✅ Projekt-Übersicht
+├── 📄 QUICKSTART.md                      ✅ Schnellstart-Anleitung
+├── 📄 PROJECT-STATUS.md                  ✅ Status & Nächste Schritte
+├── 📄 package.json                       ✅ Root Package (Workspaces)
+├── 📄 tsconfig.json                      ✅ TypeScript Config
+├── 📄 .env.example                       ✅ Environment Template
+├── 📄 .gitignore                         ✅ Git Ignore
+├── 📄 .prettierrc                        ✅ Prettier Config
+├── 📄 .eslintrc.json                     ✅ ESLint Config
+├── 📄 docker-compose.yml                 ✅ Docker Services
+├── 📄 setup.sh                           ✅ Setup-Script
+├── 📄 fetisch-dating-platform.code-workspace  ✅ VSCode Workspace
+│
+├── 📁 apps/
+│   ├── 📁 api/                           ✅ Backend API (Node.js/Express)
+│   │   ├── 📄 package.json               ✅ API Dependencies
+│   │   └── 📁 src/
+│   │       ├── 📄 index.ts               ✅ Server Entry Point
+│   │       ├── 📁 routes/
+│   │       │   ├── 📄 auth.ts            ✅ Auth Routes
+│   │       │   ├── 📄 users.ts           🟡 User Routes (Stub)
+│   │       │   ├── 📄 photos.ts          🟡 Photo Routes (Stub)
+│   │       │   ├── 📄 matches.ts         🟡 Match Routes (Stub)
+│   │       │   ├── 📄 chat.ts            🟡 Chat Routes (Stub)
+│   │       │   └── 📄 taxonomy.ts        🟡 Taxonomy Routes (Stub)
+│   │       ├── 📁 controllers/
+│   │       │   └── 📄 authController.ts  ✅ Auth Controller (mit TODOs)
+│   │       ├── 📁 middleware/
+│   │       │   ├── 📄 auth.ts            ✅ JWT Auth Middleware
+│   │       │   └── 📄 errorHandler.ts    ✅ Error Handler
+│   │       ├── 📁 utils/
+│   │       │   └── 📄 logger.ts          ✅ Winston Logger
+│   │       ├── 📁 services/              🔴 Fehlt noch
+│   │       └── 📁 models/                🔴 Fehlt noch
+│   │
+│   ├── 📁 web/                           🔴 Next.js Frontend (noch nicht erstellt)
+│   └── 📁 mobile/                        🔴 React Native App (noch nicht erstellt)
+│
+├── 📁 packages/
+│   ├── 📁 shared/                        🔴 Shared Code (erstellen)
+│   ├── 📁 database/                      🔴 DB Client (Prisma Setup nötig)
+│   └── 📁 config/                        🔴 Shared Config (erstellen)
+│
+├── 📁 services/
+│   └── 📁 ml/                            🔴 Python ML Services (noch nicht erstellt)
+│       ├── 📁 character_generator/
+│       ├── 📁 object_recognition/
+│       └── 📁 matching_engine/
+│
+├── 📁 data/
+│   ├── 📁 taxonomy/                      🔴 5000+ Fetisch-Tags (JSON erstellen)
+│   ├── 📁 archetypes/                    🔴 Character Archetypes (JSON erstellen)
+│   └── 📁 migrations/
+│       └── 📄 001_initial_schema.sql     ✅ Initial DB Schema
+│
+├── 📁 docker/
+│   ├── 📁 api/
+│   │   └── 📄 Dockerfile                 ✅ API Docker
+│   ├── 📁 web/                           🔴 Web Dockerfile (später)
+│   └── 📁 ml/                            🔴 ML Dockerfile (später)
+│
+├── 📁 scripts/
+│   ├── 📁 seed/                          🔴 Seeding Scripts (erstellen)
+│   └── 📁 setup/                         🔴 Setup Scripts (erstellen)
+│
+└── 📁 docs/
+    ├── 📁 api/                           🔴 API Docs (erstellen)
+    ├── 📁 architecture/                  🔴 Architecture Docs (erstellen)
+    └── 📁 development/                   🔴 Dev Guides (erstellen)
+
+LEGENDE:
+✅ Fertig & Funktioniert
+🟡 Stub/Placeholder (muss implementiert werden)
+🔴 Noch nicht erstellt (muss angelegt werden)
+
+STATISTIK:
+- ✅ Fertig: ~20 Files
+- 🟡 Stubs: ~6 Files  
+- 🔴 TODO: ~50+ Files
+
+NÄCHSTER SCHRITT:
+1. ./setup.sh ausführen
+2. Database-Client (Prisma) in packages/database einrichten
+3. Controllers mit DB-Queries implementieren
+4. Frontend (Web/Mobile) aufsetzen
+5. ML-Services (Python) entwickeln

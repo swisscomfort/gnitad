@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Fetisch Dating",
+    "slug": "fetisch-dating",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#7c3aed"
+    },
+    "ios": {
+      "supportsTabletMode": true,
+      "bundleIdentifier": "com.fetisch.dating"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#7c3aed"
+      },
+      "package": "com.fetisch.dating"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Für Foto-Uploads benötigen wir Zugriff auf deine Galerie",
+          "cameraPermission": "Für Foto-Uploads benötigen wir Zugriff auf deine Kamera"
+        }
+      ]
+    ]
+  }
+}

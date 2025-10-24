@@ -1,0 +1,164 @@
+{
+  "folders": [
+    {
+      "name": "🏠 Root",
+      "path": "."
+    },
+    {
+      "name": "🔌 API",
+      "path": "./apps/api"
+    },
+    {
+      "name": "🌐 Web",
+      "path": "./apps/web"
+    },
+    {
+      "name": "📱 Mobile",
+      "path": "./apps/mobile"
+    },
+    {
+      "name": "🤖 ML Services",
+      "path": "./services/ml"
+    },
+    {
+      "name": "📦 Shared",
+      "path": "./packages/shared"
+    },
+    {
+      "name": "🗄️ Database",
+      "path": "./packages/database"
+    }
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/.next": true,
+      "**/.turbo": true,
+      "**/build": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/.next": true,
+      "**/build": true
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[python]": {
+      "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.formatting.provider": "black"
+  },
+  "extensions": {
+    "recommendations": [
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+      "ms-python.python",
+      "ms-python.vscode-pylance",
+      "ms-azuretools.vscode-docker",
+      "prisma.prisma",
+      "bradlc.vscode-tailwindcss",
+      "mongodb.mongodb-vscode",
+      "redhat.vscode-yaml",
+      "eamodio.gitlens"
+    ]
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "🔌 Debug API",
+        "cwd": "${workspaceFolder:API}",
+        "runtimeExecutable": "npm",
+        "runtimeArgs": ["run", "dev"],
+        "skipFiles": ["<node_internals>/**"],
+        "console": "integratedTerminal"
+      },
+      {
+        "type": "chrome",
+        "request": "launch",
+        "name": "🌐 Debug Web",
+        "url": "http://localhost:3001",
+        "webRoot": "${workspaceFolder:Web}"
+      },
+      {
+        "type": "python",
+        "request": "launch",
+        "name": "🤖 Debug ML Service",
+        "program": "${workspaceFolder:ML Services}/main.py",
+        "console": "integratedTerminal",
+        "justMyCode": true
+      }
+    ],
+    "compounds": [
+      {
+        "name": "🚀 Full Stack",
+        "configurations": ["🔌 Debug API", "🌐 Debug Web"]
+      }
+    ]
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Install All Dependencies",
+        "type": "shell",
+        "command": "npm install",
+        "problemMatcher": []
+      },
+      {
+        "label": "Start Dev (All)",
+        "type": "shell",
+        "command": "npm run dev",
+        "problemMatcher": [],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "Database: Migrate",
+        "type": "shell",
+        "command": "npm run db:migrate",
+        "problemMatcher": []
+      },
+      {
+        "label": "Database: Seed",
+        "type": "shell",
+        "command": "npm run db:seed",
+        "problemMatcher": []
+      },
+      {
+        "label": "Docker: Up",
+        "type": "shell",
+        "command": "docker-compose up -d",
+        "problemMatcher": []
+      },
+      {
+        "label": "Docker: Down",
+        "type": "shell",
+        "command": "docker-compose down",
+        "problemMatcher": []
+      }
+    ]
+  }
+}

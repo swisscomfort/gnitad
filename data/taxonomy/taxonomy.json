@@ -1,0 +1,205 @@
+{
+  "bdsm": {
+    "dominance": {
+      "strict_mistress": {
+        "id": "bdsm.dominance.strict_mistress",
+        "name": "Strenge Herrin",
+        "description": "Absolute Kontrolle und Gehorsam",
+        "confidence": 0.98,
+        "children": {}
+      },
+      "soft_domme": {
+        "id": "bdsm.dominance.soft_domme",
+        "name": "Sanfte Dom",
+        "description": "Liebevolle aber bestimmende Dominanz",
+        "confidence": 0.95
+      }
+    },
+    "submission": {
+      "submissive": {
+        "id": "bdsm.submission.submissive",
+        "name": "Unterwürfig",
+        "description": "Bereitwilliger Gehorsam",
+        "confidence": 0.94
+      },
+      "slave": {
+        "id": "bdsm.submission.slave",
+        "name": "Sklave",
+        "description": "Vollständige Unterwerfung",
+        "confidence": 0.92
+      }
+    },
+    "impact": {
+      "whipping": {
+        "id": "bdsm.impact.whipping",
+        "name": "Auspeitschen",
+        "description": "Mit Peitschen, Gerten, etc.",
+        "confidence": 0.96
+      },
+      "spanking": {
+        "id": "bdsm.impact.spanking",
+        "name": "Schlagen",
+        "description": "Auf das Gesäß oder andere Körperteile",
+        "confidence": 0.94
+      }
+    },
+    "bondage": {
+      "rope_bondage": {
+        "id": "bdsm.bondage.rope",
+        "name": "Seilbondage",
+        "description": "Shibari, Bondage mit Seil",
+        "confidence": 0.95
+      },
+      "leather_restraints": {
+        "id": "bdsm.bondage.leather",
+        "name": "Leder-Fesseln",
+        "description": "Leder-Handschellen, Fesseln",
+        "confidence": 0.93
+      }
+    }
+  },
+  "material_fetish": {
+    "latex": {
+      "latex_clothing": {
+        "id": "material_fetish.latex.clothing",
+        "name": "Latex-Kleidung",
+        "description": "Latex-Anzüge, -Kleider",
+        "confidence": 0.92
+      },
+      "latex_gloves": {
+        "id": "material_fetish.latex.gloves",
+        "name": "Latex-Handschuhe",
+        "description": "Latex-Handschuhe",
+        "confidence": 0.90
+      }
+    },
+    "leather": {
+      "leather_clothing": {
+        "id": "material_fetish.leather.clothing",
+        "name": "Leder-Kleidung",
+        "description": "Leder-Jacken, -Hosen",
+        "confidence": 0.91
+      }
+    },
+    "nylon": {
+      "nylon_pantyhose": {
+        "id": "material_fetish.nylon.pantyhose",
+        "name": "Nylon-Strümpfe",
+        "description": "Nylon-Strümpfe, Strumpfhosen",
+        "confidence": 0.88
+      }
+    }
+  },
+  "abdl": {
+    "diapers": {
+      "adult_diapers": {
+        "id": "abdl.diapers.adult",
+        "name": "Erwachsenen-Windeln",
+        "description": "Spezielle Windeln für Erwachsene",
+        "confidence": 0.89
+      }
+    },
+    "age_regression": {
+      "baby_roleplay": {
+        "id": "abdl.regression.baby",
+        "name": "Baby-Rollenspiel",
+        "description": "Rollenspiel als Baby",
+        "confidence": 0.85
+      }
+    }
+  },
+  "roleplay": {
+    "power_exchange": {
+      "master_slave": {
+        "id": "roleplay.power.master_slave",
+        "name": "Meister-Sklave",
+        "description": "Master-Slave Dynamik",
+        "confidence": 0.94
+      },
+      "owner_pet": {
+        "id": "roleplay.power.owner_pet",
+        "name": "Besitzer-Haustier",
+        "description": "Owner und Pet Rollenspiel",
+        "confidence": 0.91
+      }
+    },
+    "scenario": {
+      "petplay": {
+        "id": "roleplay.scenario.petplay",
+        "name": "Petplay",
+        "description": "Sich als Tier verkleiden/verhalten",
+        "confidence": 0.88
+      },
+      "maid_service": {
+        "id": "roleplay.scenario.maid",
+        "name": "Maid-Service",
+        "description": "Dienerin-Rollenspiel",
+        "confidence": 0.86
+      }
+    }
+  },
+  "sensory": {
+    "sensory_deprivation": {
+      "blindfold": {
+        "id": "sensory.deprivation.blindfold",
+        "name": "Augenbinde",
+        "description": "Sichteinschränkung",
+        "confidence": 0.93
+      },
+      "ear_plugs": {
+        "id": "sensory.deprivation.ear_plugs",
+        "name": "Ohrstöpsel",
+        "description": "Gehörentzug",
+        "confidence": 0.85
+      }
+    },
+    "sensation_play": {
+      "ice_play": {
+        "id": "sensory.play.ice",
+        "name": "Eis-Spiel",
+        "description": "Mit Eis spielen",
+        "confidence": 0.87
+      },
+      "wax_play": {
+        "id": "sensory.play.wax",
+        "name": "Wachs-Spiel",
+        "description": "Mit Kerzen- oder Massagwachs",
+        "confidence": 0.90
+      }
+    }
+  },
+  "experience_level": {
+    "beginner": {
+      "id": "experience.beginner",
+      "name": "Anfänger",
+      "description": "Gerade erst anfangend"
+    },
+    "intermediate": {
+      "id": "experience.intermediate",
+      "name": "Fortgeschrittener",
+      "description": "Einige Erfahrung"
+    },
+    "advanced": {
+      "id": "experience.advanced",
+      "name": "Fortgeschritten",
+      "description": "Langjährige Erfahrung"
+    }
+  },
+  "lifestyle": {
+    "full_time": {
+      "id": "lifestyle.full_time",
+      "name": "Vollzeit-Lifestyle",
+      "description": "24/7 Lifestyle"
+    },
+    "part_time": {
+      "id": "lifestyle.part_time",
+      "name": "Teilzeit-Lifestyle",
+      "description": "Nur für bestimmte Zeiten"
+    },
+    "scene_only": {
+      "id": "lifestyle.scene_only",
+      "name": "Nur in Szenen",
+      "description": "Nur während verabredeter Szenen"
+    }
+  }
+}
