@@ -1,6 +1,21 @@
 # Fetisch-Dating-Platform
 
-Eine diskrete Fetisch-Dating-Plattform mit KI-gestütztem Charakter-Generator und Objekt-basiertem Matching.
+> Eine diskrete, KI-gestützte Dating-Plattform für die Fetisch-Community
+
+[![CI/CD](https://github.com/swisscomfort/gnitad/actions/workflows/test-and-build.yml/badge.svg)](https://github.com/swisscomfort/gnitad/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://swisscomfort.github.io/gnitad/)
+
+## ✨ Features
+
+- 🔒 **Diskrete Profile** - Objekt-Fotos statt Gesichter (Windel, Seil, Latex-Handschuh, etc.)
+- 🤖 **KI-Powered Matching** - Character Generator aus 200+ Micro-Decisions
+- 🏷️ **5000+ Fetisch-Tags** - Ultra-genaues Matching basierend auf Präferenzen
+- 💬 **Encrypted Messaging** - End-to-end verschlüsselte Real-time Chat
+- 📱 **Multi-Plattform** - Web (Next.js), Mobile (React Native), ML Services (Flask)
+- 🔐 **Privacy-First** - Gestaffelte Offenlegung, Email-Hashing, GDPR-konform
+
+---
 
 ## 🚀 Quick Start
 
@@ -53,35 +68,44 @@ docker-compose down
 
 ```
 fetisch-dating-platform/
+├── .github/
+│   ├── workflows/        # GitHub Actions CI/CD
+│   ├── ISSUE_TEMPLATE/
+│   └── copilot-instructions.md
 ├── apps/
 │   ├── api/              # Backend API (Node.js/Express)
+│   │   ├── src/
+│   │   │   ├── controllers/
+│   │   │   └── services/
 │   ├── web/              # Web App (Next.js)
+│   │   ├── app/
+│   │   ├── store/
+│   │   └── lib/
 │   └── mobile/           # Mobile App (React Native)
-├── packages/
-│   ├── shared/           # Shared types & utils
-│   ├── database/         # Database schema & migrations
-│   └── config/           # Shared configuration
+│       ├── store/
+│       └── lib/
 ├── services/
-│   ├── ml/               # ML Services (Python)
-│   │   ├── character_generator/
-│   │   ├── object_recognition/
-│   │   └── matching_engine/
-│   └── moderation/       # Content moderation
+│   └── ml/               # ML Services (Python)
+│       ├── character_generator.py
+│       ├── object_recognition.py
+│       └── main.py
 ├── data/
-│   ├── taxonomy/         # Fetisch-Taxonomie (5000+ Tags)
-│   ├── archetypes/       # Character Archetypes
-│   └── migrations/       # SQL Migrations
+│   └── taxonomy/         # Fetisch-Taxonomie (50+ Tags)
+│       └── taxonomy.json
 ├── docs/
 │   ├── api/              # API Dokumentation
-│   ├── architecture/     # Architektur-Diagramme
-│   └── development/      # Development Guides
+│   │   └── endpoints.md
+│   ├── deployment/       # Deployment Guides
+│   │   └── production-guide.md
+│   └── index.md          # GitHub Pages Homepage
 ├── scripts/
 │   ├── seed/             # Database Seeding
 │   └── setup/            # Setup Scripts
-└── docker/
-    ├── api/
-    ├── web/
-    └── ml/
+├── docker-compose.yml
+├── schema.prisma
+├── package.json
+├── turbo.json
+└── README.md
 ```
 
 ## 🛠️ Development
@@ -143,10 +167,11 @@ npm run test:e2e          # End-to-End Tests
 
 ## 📚 Dokumentation
 
-- [API Dokumentation](./docs/api/README.md)
-- [Architektur](./docs/architecture/README.md)
-- [Development Guide](./docs/development/README.md)
-- [Deployment Guide](./docs/deployment/README.md)
+- [API Dokumentation](./docs/api/endpoints.md)
+- [Quick Start Guide](./QUICKSTART.md)
+- [Contributing Guide](./CONTRIBUTING.md)
+- [Deployment Guide](./docs/deployment/production-guide.md)
+- [GitHub Pages Dokumentation](https://swisscomfort.github.io/gnitad/)
 
 ## 🔒 Security
 
@@ -154,14 +179,20 @@ npm run test:e2e          # End-to-End Tests
 - Messages sind end-to-end verschlüsselt
 - Fotos sind at-rest verschlüsselt (AES-256)
 - GDPR-compliant
+- JWT Authentication mit 7-Tage Tokens
+- Rate Limiting & CSRF Protection
 
-## 📝 License
+## 🤝 Contributing
 
-Proprietary - All rights reserved
+Contributions sind willkommen! Siehe [CONTRIBUTING.md](./CONTRIBUTING.md) für Guidelines.
 
-## 👥 Team
+## � License
 
-- Backend: [Name]
-- Frontend: [Name]
-- ML: [Name]
-- Product: [Name]
+MIT License - siehe [LICENSE](./LICENSE) für Details
+
+## 🔗 Links
+
+- **Repository**: https://github.com/swisscomfort/gnitad
+- **Dokumentation**: https://swisscomfort.github.io/gnitad/
+- **Issues**: https://github.com/swisscomfort/gnitad/issues
+- **Discussions**: https://github.com/swisscomfort/gnitad/discussions
